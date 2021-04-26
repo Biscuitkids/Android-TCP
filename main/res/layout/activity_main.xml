@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:background="#7CB342"
+            android:hint="IP:"
+            android:textColor="#ffffff" />
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="端口:"
+            android:background="#C0CA33"
+            android:layout_toRightOf="@id/ip"
+            android:inputType="number"
+            />
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/port"
+            android:text="连接服务器"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/receive"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#00ACC1"
+            android:textColor="#FFFFFF"
+            android:text="接收区"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            />
+        <EditText
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#3949AB"
+            android:hint="发送："
+            android:textColor="#ffffff"
+            android:layout_below="@id/receive"/>
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:layout_below="@+id/send"
+            />
+    </RelativeLayout>
+</RelativeLayout>
